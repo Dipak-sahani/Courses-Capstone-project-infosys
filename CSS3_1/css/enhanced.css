@@ -1,0 +1,159 @@
+/* Rearrange the furniture for screens wider than 37.5em (i.e. 600px) */
+
+body{
+	background-image: url("/images/bg.jpg");
+	
+}
+
+.mainHeader{
+	height: inherit;
+}
+.nav-bar{
+	display: flex;
+    justify-content: space-around;
+	background-color: gray;
+    padding: 10px;
+
+}
+
+.nav-bar li a{
+	text-decoration: none;
+	color: aliceblue;
+}
+
+
+.nav-bar li{
+	list-style-type: none;
+}
+
+.conatiner{
+	display: grid;
+	grid-template-columns: auto 30vh;
+}
+.top-sidebar{
+	margin-top: 20px;
+}
+
+aside{
+	background-color: beige;
+	margin: 10 10;
+	padding: 5%;
+	float: right;
+	border: 2px solid gray;
+
+}
+
+
+.topContent,.bottomContent{
+	background-color: beige;
+	margin-top: 20px;
+	border: 2px solid gray;
+	padding: 2%;
+}
+
+h2 a{
+	text-decoration: none;
+	color: red;
+}
+
+
+.mainFooter{
+	background-color: gray;
+	padding: 5px;
+	padding-left: 10px;
+	color: aliceblue;
+	font-weight: 500;
+
+}
+
+.mainFooter a{
+	text-decoration: none;
+	color: red;
+}
+
+/*  from this certificate page */
+
+.certificate-container{
+	display: grid;
+	justify-content: center;
+}
+h3{
+	color: rgb(255, 255, 255);
+	text-shadow: 5px 5px 5px;
+}
+.certificate-container .container{
+	background-color:back;
+	opacity: 90%;
+	backdrop-filter: blur(10px);
+	border: 2px solid blue;
+	margin-top: 50px;
+	display: grid;
+	justify-content: center;
+}
+
+
+.bmenu{
+	padding-left: 0;
+}
+.bmenu li{
+margin: 10px;
+width: 20vh;
+height: 5vh;
+display: grid;
+	justify-content: center;
+	align-items: center;
+
+}
+.bmenu li a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.bmenu li:hover{
+	background-color: gray;
+	
+
+}
+
+
+/*  certificate style */
+@font-face {
+  font-family: 'seasrn';
+  src:  
+       url('../font/SEASRN__.woff') format('woff'),
+       url('../font/SEASRN__.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#heading {
+  font-family: 'seasrn', fantasy, serif; 
+  font-size: 3rem; 
+  font-weight: normal; 
+  letter-spacing: 1px; 
+}
+
+@media ( min-width : 600px) {
+	body>* {
+		margin: 0 auto;
+		max-width: 56.25em;
+	}
+	ul#features {
+		text-align: center;
+	}
+	ul#features li {
+		display: inline-block;
+		margin: 2%;
+		min-height: 18em;
+		text-align: left;
+		width: 28%;
+	}
+}
+
+/* Rearrange the furniture for screens wider than 56.25em (i.e., 900px) */
+@media screen and (min-width: 900px) {
+	header {
+		height: 4em;
+	}
+}
